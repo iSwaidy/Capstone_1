@@ -49,7 +49,7 @@ ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date);
 SELECT
     YEAR(Transaction_Date) AS 'Year',
     MONTHNAME(Transaction_Date) AS 'Month',
-    CONCAT('$', FORMAT(SUM(Sale_Amount), 2)) AS 'Total Revenue'
+    (SUM(Sale_Amount)) AS 'Total Revenue'
 FROM store_sales s
 JOIN store_locations sl ON s.store_id = sl.storeid
 WHERE State = 'Maryland'
@@ -93,7 +93,7 @@ SELECT
     YEAR(Transaction_Date) AS 'Year',
     MONTHNAME(Transaction_Date) AS 'Month', ic.Category,
     COUNT(id) AS 'Number of Transactions',
-    CONCAT('$', FORMAT(ROUND(AVG(Sale_Amount), 2), 2)) AS 'Average Transaction'
+    (AVG(Sale_Amount)) AS 'Average Transaction'
 FROM store_sales s
 JOIN store_locations sl ON s.store_id = sl.storeid
 JOIN products p ON s.prod_num = p.prodnum
@@ -166,5 +166,3 @@ Annapolis should prioritize promoting tech products to increase average transact
 Additionally, Q1 historically shows slower revenue & implementing targeted promotions in January and February could help maintain the momentum built in Q4 2025. (Query2)
 
 */
-
-
