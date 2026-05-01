@@ -24,7 +24,7 @@ SQL and Excel as part of the Year Up United Data Analytics Boot Camp.
 - Git / GitHub
 
 ## Video Presentation
-[Link to recording will be added here]
+https://yearuptemp-my.sharepoint.com/:p:/g/personal/dsharma_yearup_org/IQAaaRai9a_rSK00FRv90znsAfLbQn4an-l8_Q-Ig614tXA?e=LbPNnG
 
 ## Author
 Cris Ramirez | Year Up United - Data Analytics | 2026
